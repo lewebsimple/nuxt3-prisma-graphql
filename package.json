@@ -1,0 +1,20 @@
+{
+  "name": "nuxt3-prisma-graphql",
+  "version": "0.1.0",
+  "description": "Dream DX with Nuxt 3, Prisma and Pothos GraphQL.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:lewebsimple/nuxt3-prisma-graphql.git"
+  },
+  "license": "MIT",
+  "author": "Pascal Martineau <pascal@lewebsimple.ca>",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.3"
+  }
+}
