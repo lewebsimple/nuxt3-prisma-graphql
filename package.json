@@ -12,9 +12,12 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "release": "release-it"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.3"
+    "@release-it/conventional-changelog": "^5.0.0",
+    "nuxt": "3.0.0-rc.3",
+    "release-it": "^15.0.0"
   }
 }
