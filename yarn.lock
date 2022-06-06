@@ -764,6 +764,11 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
+"@pothos/core@^3.11.0":
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/@pothos/core/-/core-3.11.0.tgz#ca3ca236151c546c1c384438af3dd7e48b960ad2"
+  integrity sha512-zeVeG1Ggfyv3wia7lP+9a9QmFpVVST7oho4IQtGbtU7QvvdsezpikJEvPwAg7T4Sgu0tEyMRWwFcnJZdSHSjCw==
+
 "@release-it/conventional-changelog@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-5.0.0.tgz#2359e19f7d609c60c31a680faaaeead6efc752d7"
