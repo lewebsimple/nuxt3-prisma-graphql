@@ -1,0 +1,3 @@
+{
+  "extends": "@lewebsimple/eslint-config-vue"
+}

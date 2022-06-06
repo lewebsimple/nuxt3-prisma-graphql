@@ -12,11 +12,14 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "lint": "eslint --fix .",
     "preview": "nuxt preview",
     "release": "release-it"
   },
   "devDependencies": {
+    "@lewebsimple/eslint-config-vue": "^0.5.5",
     "@release-it/conventional-changelog": "^5.0.0",
+    "eslint": "^8.17.0",
     "nuxt": "3.0.0-rc.3",
     "release-it": "^15.0.0"
   }
