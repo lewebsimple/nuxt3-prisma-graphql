@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.1.2](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.1...0.1.2) (2022-06-06)
+
+
+### Enhancements
+
+* Code linting with ESLint ([962982d](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/962982d4cc73a6642f9a75433af375542a5e11d4))
+* Git commit hooks with Husky ([1665a75](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/1665a75495fefd3e627d3cabe3a14b104297c060))
+
 ### 0.1.1 (2022-06-06)
 
 
