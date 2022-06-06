@@ -1,6 +1,6 @@
 {
   "name": "nuxt3-prisma-graphql",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dream DX with Nuxt 3, Prisma and Pothos GraphQL.",
   "repository": {
     "type": "git",
