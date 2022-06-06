@@ -13,6 +13,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "lint": "eslint --fix .",
+    "prepare": "husky install",
     "preview": "nuxt preview",
     "release": "release-it"
   },
@@ -21,6 +22,7 @@
     "@release-it/conventional-changelog": "^5.0.0",
     "eslint": "^8.17.0",
     "nuxt": "3.0.0-rc.3",
-    "release-it": "^15.0.0"
+    "release-it": "^15.0.0",
+    "husky": "^8.0.0"
   }
 }
