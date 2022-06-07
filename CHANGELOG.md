@@ -1,5 +1,18 @@
 # Changelog
 
+### [0.1.4](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.3...0.1.4) (2022-06-07)
+
+
+### Enhancements
+
+* Configure @pothos/plugin-prisma ([a85d6e1](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/a85d6e1ce7275f1d4912e63f219bdc8dd68fe10a))
+* Database seeding scripts ([d04ef4b](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/d04ef4be2eb39a7a4c4c3262f23934683b22c14e))
+* Generate Zod schema from Prisma models ([5175690](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/5175690dbf06f7caeaf62f7002068555fb30a8e3))
+* Initial authentication server logic ([c09a059](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/c09a0592bcd6879dad0e56655a57a1fe193e2dce))
+* Initial GraphQL code generation ([b72888a](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/b72888a2c38ac4e753cc3ec4d5aecb7a66654d60))
+* Initial Prisma configuration ([17dc8e3](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/17dc8e34d5b0e309f1c99559b033ce2547237e41))
+* Type-safe pubsub with @graphql-yoga/node ([71f2f1c](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/71f2f1c8a8e9d90f5594edc460f411b0a29f4bdc))
+
 ### [0.1.3](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.2...0.1.3) (2022-06-07)
 
 
