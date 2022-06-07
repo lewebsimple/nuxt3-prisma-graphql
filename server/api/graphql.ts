@@ -4,7 +4,7 @@ import { schema, Context } from "../utils/schema";
 
 export default defineEventHandler(async (event) => {
   const server = createServer<Context>({
-    context: { ...initContextCache() },
+    context: { ...initContextCache(), auth: event.context.auth },
     graphiql: {
       defaultQuery: `{ version }`,
       endpoint: "/api/graphql",

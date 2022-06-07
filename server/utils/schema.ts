@@ -2,10 +2,13 @@ import SchemaBuilder from "@pothos/core";
 import PrismaPlugin from "@pothos/plugin-prisma";
 import PrismaTypes from "../../prisma/pothos";
 import { prisma } from "../../prisma/client";
+import { AuthState } from "./auth";
 import * as types from "./types";
 
 // GraphQL context type
-export type Context = {};
+export type Context = {
+  auth: AuthState;
+};
 
 // Pothos GraphQL schema builder
 export const builder = new SchemaBuilder<{
