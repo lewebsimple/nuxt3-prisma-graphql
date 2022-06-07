@@ -1,5 +1,5 @@
-import { builder } from "~/server/utils/schema";
-import { name, version } from "~/package.json";
+import { builder } from "../schema";
+import { name, version } from "../../../package.json";
 
 export const VersionSchema = () => {
   builder.queryField("version", (t) =>

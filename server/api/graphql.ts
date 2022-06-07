@@ -1,6 +1,6 @@
 import { createServer } from "@graphql-yoga/node";
 import { initContextCache } from "@pothos/core";
-import { schema, Context } from "~/server/utils/schema";
+import { schema, Context } from "../utils/schema";
 
 export default defineEventHandler(async (event) => {
   const server = createServer<Context>({
