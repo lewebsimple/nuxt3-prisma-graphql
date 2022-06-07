@@ -22,10 +22,14 @@
     "@lewebsimple/eslint-config-vue": "^0.5.5",
     "@pothos/core": "^3.11.0",
     "@release-it/conventional-changelog": "^5.0.0",
+    "@types/ws": "^8.5.3",
     "eslint": "^8.17.0",
     "graphql": "^16.5.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.8.2",
     "husky": "^8.0.0",
     "nuxt": "3.0.0-rc.3",
-    "release-it": "^15.0.0"
+    "release-it": "^15.0.0",
+    "ws": "^8.7.0"
   }
 }

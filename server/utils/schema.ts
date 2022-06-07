@@ -12,7 +12,7 @@ export const builder = new SchemaBuilder<{
 // Default Query / Mutation / Subscriptions
 builder.queryType({});
 //builder.mutationType({});
-//builder.subscriptionType({});
+builder.subscriptionType({});
 
 // Execute schema types
 Object.values(types).forEach((type) => type());
