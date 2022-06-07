@@ -1,0 +1,21 @@
+type Query {
+  """Current package name and version"""
+  version: String!
+}
+
+type Subscription {
+  heartbeat: Boolean!
+}
+
+type User {
+  email: String!
+  id: ID!
+  role: UserRole!
+}
+
+enum UserRole {
+  ADMIN
+  EDITOR
+  GUEST
+  UNVERIFIED
+}

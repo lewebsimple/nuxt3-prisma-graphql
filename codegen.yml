@@ -1,0 +1,11 @@
+schema: server/utils/build-schema.js
+generates:
+  generated/schema.graphql:
+    plugins:
+      - schema-ast
+  generated/schema.ts:
+    plugins:
+      - typescript
+hooks:
+  afterAllFileWrite:
+    - eslint --fix --ignore-pattern *.graphql ./generated
