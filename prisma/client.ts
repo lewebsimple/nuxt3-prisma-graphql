@@ -5,4 +5,4 @@ export const { PrismaClient } = Prisma || PrismaScope;
 // Load process.env.DATABASE_URL from .env
 config();
 
-export const prisma = process.env.DATABASE_URL && new PrismaClient();
+export const prisma = new PrismaClient();
