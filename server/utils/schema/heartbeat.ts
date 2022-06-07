@@ -5,7 +5,7 @@ export const HeartbeatSchema = () => {
   builder.subscriptionField("heartbeat", (t) =>
     t.boolean({
       subscribe: () => ({
-        [Symbol.asyncIterator]: () => pubsub.asyncIterator<{ heartbeat: boolean }>(["heartbeat"]),
+        [Symbol.asyncIterator]: () => pubsub.subscribe("heartbeat"),
       }),
       resolve: (data: { heartbeat: boolean }) => data.heartbeat,
     }),

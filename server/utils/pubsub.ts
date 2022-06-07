@@ -1,3 +1,5 @@
-import { PubSub } from "graphql-subscriptions";
+import { createPubSub } from "@graphql-yoga/node";
 
-export const pubsub = new PubSub();
+export const pubsub = createPubSub<{
+  heartbeat: [{ heartbeat: boolean }];
+}>();
