@@ -1,5 +1,19 @@
 # Changelog
 
+### [0.1.3](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.2...0.1.3) (2022-06-07)
+
+
+### Fixes
+
+* use relative paths for portability ([3cc3b6b](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/3cc3b6b8bcbcbb75c049faaa55983b007d535d81))
+
+
+### Enhancements
+
+* Code-first GraphQL schema ([de2afa0](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/de2afa0f97b83e4a3d0334b45029263ab8ede2f7))
+* GraphQL API endpoint ([515d4f9](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/515d4f9aadc1594f3398265fca50d13eb21e7c2d))
+* graphql subscriptions over websocket ([05f9a0e](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/05f9a0e17339ecba2e923c7b5027084ba81f1be9))
+
 ### [0.1.2](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.1...0.1.2) (2022-06-06)
 
 
