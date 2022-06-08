@@ -1,6 +1,5 @@
-import { builder } from "../schema";
 import { UserRole } from "@prisma/client";
-import { prisma } from "../../../prisma/client";
+import { builder, prisma } from "../schema";
 import { encryptPassword } from "../password";
 
 export const UserSchema = () => {

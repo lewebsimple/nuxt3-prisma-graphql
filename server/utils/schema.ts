@@ -48,3 +48,7 @@ Object.values(types).forEach((type) => type());
 
 // Build GraphQL schema
 export const schema = builder.toSchema({});
+
+// Re-export prisma and pubsub for convenience
+export { prisma };
+export { pubsub } from "./pubsub";
