@@ -1,5 +1,16 @@
 # Changelog
 
+### [0.1.5](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.4...0.1.5) (2022-06-08)
+
+
+### Enhancements
+
+* Improve User schema (auth / totalCount) ([9856c8b](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/9856c8b3501e4a042a5352df006f7fc75638dc28))
+* Initial relay configuration ([ec6abd6](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/ec6abd65c4f6e8f29eb4caa43c9e197959ba719e))
+* Initial scope auth configuration ([02af958](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/02af9585883891776b8c7aa4c38b42748e1d55ec))
+* Initial userCreate mutation ([8935cfd](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/8935cfdd273d9ac913ec123b6185c46c2b6a5f26))
+* login / logout api routes ([3949914](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/39499140140b84ae0c5c77073d6718cfe053ad4b))
+
 ### [0.1.4](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.3...0.1.4) (2022-06-07)
 
 
