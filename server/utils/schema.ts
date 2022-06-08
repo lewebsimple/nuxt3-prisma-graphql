@@ -1,5 +1,7 @@
 import SchemaBuilder from "@pothos/core";
+import ScopeAuthPlugin from "@pothos/plugin-scope-auth";
 import PrismaPlugin from "@pothos/plugin-prisma";
+import { UserRole } from "@prisma/client";
 import PrismaTypes from "../../prisma/pothos";
 import { prisma } from "../../prisma/client";
 import { AuthState } from "./auth";
@@ -12,10 +14,18 @@ export type Context = {
 
 // Pothos GraphQL schema builder
 export const builder = new SchemaBuilder<{
+  AuthScopes: {
+    isAuthenticated: boolean;
+    hasUserRole: UserRole;
+  };
   Context: Context;
   PrismaTypes: PrismaTypes;
 }>({
-  plugins: [PrismaPlugin],
+  authScopes: async (context) => ({
+    isAuthenticated: !!context.auth.user,
+    hasUserRole: (role) => ["ADMIN", role].includes(context.auth.user?.role || ""),
+  }),
+  plugins: [ScopeAuthPlugin, PrismaPlugin],
   prisma: { client: prisma },
 });
 
