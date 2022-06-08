@@ -26,8 +26,11 @@
   "devDependencies": {
     "@boost/module": "^3.1.0",
     "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/near-operation-file-preset": "^2.2.13",
     "@graphql-codegen/schema-ast": "^2.4.1",
     "@graphql-codegen/typescript": "^2.5.0",
+    "@graphql-codegen/typescript-operations": "^2.4.1",
+    "@graphql-codegen/typescript-vue-urql": "^2.2.13",
     "@graphql-yoga/node": "^2.9.0",
     "@lewebsimple/eslint-config-vue": "^0.5.5",
     "@pothos/core": "^3.11.0",
