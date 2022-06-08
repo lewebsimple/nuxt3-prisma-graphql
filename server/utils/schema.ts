@@ -1,6 +1,7 @@
 import SchemaBuilder from "@pothos/core";
 import ScopeAuthPlugin from "@pothos/plugin-scope-auth";
 import PrismaPlugin from "@pothos/plugin-prisma";
+import RelayPlugin from "@pothos/plugin-relay";
 import { UserRole } from "@prisma/client";
 import PrismaTypes from "../../prisma/pothos";
 import { prisma } from "../../prisma/client";
@@ -21,12 +22,13 @@ export const builder = new SchemaBuilder<{
   Context: Context;
   PrismaTypes: PrismaTypes;
 }>({
+  plugins: [ScopeAuthPlugin, PrismaPlugin, RelayPlugin],
   authScopes: async (context) => ({
     isAuthenticated: !!context.auth.user,
     hasUserRole: (role) => ["ADMIN", role].includes(context.auth.user?.role || ""),
   }),
-  plugins: [ScopeAuthPlugin, PrismaPlugin],
   prisma: { client: prisma },
+  relayOptions: {},
 });
 
 // Default Query / Mutation / Subscriptions
