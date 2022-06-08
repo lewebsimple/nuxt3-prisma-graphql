@@ -1,13 +1,39 @@
+interface Node {
+  id: ID!
+}
+
+type PageInfo {
+  endCursor: ID
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: ID
+}
+
 type Query {
+  node(id: ID!): Node
+  nodes(ids: [ID!]!): [Node]!
+  user(id: ID!): User!
+  users(after: ID, before: ID, first: Int, last: Int): QueryUsersConnection!
+
   """Current package name and version"""
   version: String!
+}
+
+type QueryUsersConnection {
+  edges: [QueryUsersConnectionEdge]!
+  pageInfo: PageInfo!
+}
+
+type QueryUsersConnectionEdge {
+  cursor: ID!
+  node: User!
 }
 
 type Subscription {
   heartbeat: Boolean!
 }
 
-type User {
+type User implements Node {
   email: String!
   id: ID!
   role: UserRole!

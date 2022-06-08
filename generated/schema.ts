@@ -12,10 +12,57 @@ export type Scalars = {
   Float: number;
 };
 
+export type Node = {
+  id: Scalars["ID"];
+};
+
+export type PageInfo = {
+  __typename?: "PageInfo";
+  endCursor?: Maybe<Scalars["ID"]>;
+  hasNextPage: Scalars["Boolean"];
+  hasPreviousPage: Scalars["Boolean"];
+  startCursor?: Maybe<Scalars["ID"]>;
+};
+
 export type Query = {
   __typename?: "Query";
+  node?: Maybe<Node>;
+  nodes: Array<Maybe<Node>>;
+  user: User;
+  users: QueryUsersConnection;
   /** Current package name and version */
   version: Scalars["String"];
+};
+
+export type QueryNodeArgs = {
+  id: Scalars["ID"];
+};
+
+export type QueryNodesArgs = {
+  ids: Array<Scalars["ID"]>;
+};
+
+export type QueryUserArgs = {
+  id: Scalars["ID"];
+};
+
+export type QueryUsersArgs = {
+  after?: InputMaybe<Scalars["ID"]>;
+  before?: InputMaybe<Scalars["ID"]>;
+  first?: InputMaybe<Scalars["Int"]>;
+  last?: InputMaybe<Scalars["Int"]>;
+};
+
+export type QueryUsersConnection = {
+  __typename?: "QueryUsersConnection";
+  edges: Array<Maybe<QueryUsersConnectionEdge>>;
+  pageInfo: PageInfo;
+};
+
+export type QueryUsersConnectionEdge = {
+  __typename?: "QueryUsersConnectionEdge";
+  cursor: Scalars["ID"];
+  node: User;
 };
 
 export type Subscription = {
@@ -23,7 +70,7 @@ export type Subscription = {
   heartbeat: Scalars["Boolean"];
 };
 
-export type User = {
+export type User = Node & {
   __typename?: "User";
   email: Scalars["String"];
   id: Scalars["ID"];

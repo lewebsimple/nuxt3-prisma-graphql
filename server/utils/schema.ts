@@ -28,7 +28,14 @@ export const builder = new SchemaBuilder<{
     hasUserRole: (role) => ["ADMIN", role].includes(context.auth.user?.role || ""),
   }),
   prisma: { client: prisma },
-  relayOptions: {},
+  relayOptions: {
+    cursorType: "ID",
+    encodeGlobalID: (typename: string, id: string | number | bigint) => `${typename}:${id}`,
+    decodeGlobalID: (globalID: string) => {
+      const [typename, id] = globalID.split(":");
+      return { typename, id };
+    },
+  },
 });
 
 // Default Query / Mutation / Subscriptions
