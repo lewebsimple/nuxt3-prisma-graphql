@@ -1,4 +1,6 @@
-import urql, { cacheExchange, dedupExchange, fetchExchange, ssrExchange } from "@urql/vue";
+import urql, { cacheExchange, dedupExchange, fetchExchange, ssrExchange, subscriptionExchange } from "@urql/vue";
+import { createClient as createWSClient } from "graphql-ws";
+import { WebSocket } from "ws";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const { graphqlApiURL } = useRuntimeConfig();
@@ -22,8 +24,26 @@ export default defineNuxtPlugin((nuxtApp) => {
     });
   }
 
+  // Subscription over WebSocket exchange
+  const wsClient = createWSClient({
+    url: graphqlApiURL.replace("http", "ws"),
+    webSocketImpl: process.server && WebSocket,
+  });
+  const wsExchange = subscriptionExchange({
+    forwardSubscription(operation) {
+      return {
+        subscribe: (sink) => {
+          const dispose = wsClient.subscribe(operation, sink);
+          return {
+            unsubscribe: dispose,
+          };
+        },
+      };
+    },
+  });
+
   // Custom exchanges
-  const exchanges = [dedupExchange, cacheExchange, ssr, fetchExchange];
+  const exchanges = [dedupExchange, cacheExchange, ssr, fetchExchange, wsExchange];
 
   nuxtApp.vueApp.use(urql, {
     url: graphqlApiURL || "http://localhost:3000/api/graphql",
