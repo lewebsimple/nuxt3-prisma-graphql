@@ -40,7 +40,7 @@ export const builder = new SchemaBuilder<{
 
 // Default Query / Mutation / Subscriptions
 builder.queryType({});
-//builder.mutationType({});
+builder.mutationType({});
 builder.subscriptionType({});
 
 // Execute schema types

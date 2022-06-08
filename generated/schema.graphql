@@ -1,3 +1,7 @@
+type Mutation {
+  userCreate(email: String!, password: String!): User!
+}
+
 interface Node {
   id: ID!
 }
@@ -12,7 +16,6 @@ type PageInfo {
 type Query {
   node(id: ID!): Node
   nodes(ids: [ID!]!): [Node]!
-  user(id: ID!): User!
   users(after: ID, before: ID, first: Int, last: Int): QueryUsersConnection!
 
   """Current package name and version"""
@@ -22,6 +25,7 @@ type Query {
 type QueryUsersConnection {
   edges: [QueryUsersConnectionEdge]!
   pageInfo: PageInfo!
+  totalCount: Int!
 }
 
 type QueryUsersConnectionEdge {

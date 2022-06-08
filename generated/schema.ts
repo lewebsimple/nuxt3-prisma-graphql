@@ -12,6 +12,16 @@ export type Scalars = {
   Float: number;
 };
 
+export type Mutation = {
+  __typename?: "Mutation";
+  userCreate: User;
+};
+
+export type MutationUserCreateArgs = {
+  email: Scalars["String"];
+  password: Scalars["String"];
+};
+
 export type Node = {
   id: Scalars["ID"];
 };
@@ -28,7 +38,6 @@ export type Query = {
   __typename?: "Query";
   node?: Maybe<Node>;
   nodes: Array<Maybe<Node>>;
-  user: User;
   users: QueryUsersConnection;
   /** Current package name and version */
   version: Scalars["String"];
@@ -42,10 +51,6 @@ export type QueryNodesArgs = {
   ids: Array<Scalars["ID"]>;
 };
 
-export type QueryUserArgs = {
-  id: Scalars["ID"];
-};
-
 export type QueryUsersArgs = {
   after?: InputMaybe<Scalars["ID"]>;
   before?: InputMaybe<Scalars["ID"]>;
@@ -57,6 +62,7 @@ export type QueryUsersConnection = {
   __typename?: "QueryUsersConnection";
   edges: Array<Maybe<QueryUsersConnectionEdge>>;
   pageInfo: PageInfo;
+  totalCount: Scalars["Int"];
 };
 
 export type QueryUsersConnectionEdge = {
