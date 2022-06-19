@@ -1,5 +1,19 @@
 # Changelog
 
+### [0.1.6](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.5...0.1.6) (2022-06-19)
+
+
+### Enhancements
+
+* Authentication / authorization composables ([4453d79](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/4453d79ee8cae34ae8f02d068cc6efc240993a62))
+* Authorization middleware ([fb1b2bf](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/fb1b2bf2eadf874f712b2fcafdee1dc75442d7a1))
+* Code generation for GraphQL operations ([e5ac34f](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/e5ac34f2e9cd5e135834c2f860b1f1c19a48abb7))
+* Initial @urql/vue client configuration ([677b79f](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/677b79f40b4a68aab6a8b95b44b7d1c2b8ca52d9))
+* Initial home page ([f4091c4](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/f4091c45eb6d6bcd8efe8ffa5adb80094bef41b3))
+* Initialize auth from WS request ([5ae310e](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/5ae310e0f1a5b3c95f0285a23f8773b414582392))
+* Re-export prisma and pubsub for convenience ([bdcef18](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/bdcef18f85e425f567bc47514fd21734e662df25))
+* Subscription over WebSocket exchange ([0560fab](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/0560fab5cfd62d47b4919d22d8a5cd1822e83df6))
+
 ### [0.1.5](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.4...0.1.5) (2022-06-08)
 
 
