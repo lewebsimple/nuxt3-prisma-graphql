@@ -12,7 +12,10 @@ export async function initWsServer(server: Server) {
   useServer(
     {
       context: async ({ extra }) => {
-        return { ...initContextCache() };
+        return {
+          ...initContextCache(),
+          auth: await initAuthState(extra.request),
+        };
       },
       execute,
       subscribe,
