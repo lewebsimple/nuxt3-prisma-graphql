@@ -1,0 +1,45 @@
+@layer components {
+
+  .h1 {
+    @apply text-2xl font-semibold text-gray-900;
+  }
+  .h2 {
+    @apply text-3xl;
+  }
+  .h3 {
+    @apply text-2xl;
+  }
+  .h4 {
+    @apply text-xl;
+  }
+  .h5 {
+    @apply text-lg
+  }
+  .h6 {
+    @apply text-lg;
+  }
+
+}
+
+@layer base {
+
+  h1 {
+    @apply h1;
+  }
+  h2 {
+    @apply h2;
+  }
+  h3 {
+    @apply h3;
+  }
+  h4 {
+    @apply h4;
+  }
+  h5 {
+    @apply h5;
+  }
+  h6 {
+    @apply h6;
+  }
+
+}
