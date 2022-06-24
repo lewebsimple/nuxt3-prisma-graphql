@@ -23,5 +23,5 @@ export async function initWsServer(server: Server) {
     },
     wsServer,
   );
-  setInterval(() => pubsub.publish("heartbeat", { heartbeat: true }), 5000);
+  setInterval(() => pubsub.publish("heartbeat", { heartbeat: true }), 1000);
 }

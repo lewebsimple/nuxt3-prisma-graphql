@@ -4,6 +4,9 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   theme: {
     extend: {
+      animation: {
+        heartbeat: "pulse 0.2s",
+      },
       colors: {
         primary: { DEFAULT: colors.sky["700"], ...colors.sky },
         dark: { DEFAULT: colors.neutral["700"] },
