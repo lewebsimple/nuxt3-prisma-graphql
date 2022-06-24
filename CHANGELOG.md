@@ -1,5 +1,16 @@
 # Changelog
 
+### [0.1.7](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.6...0.1.7) (2022-06-24)
+
+
+### Enhancements
+
+* Add buttons / forms styles ([a6815de](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/a6815de2ff9a7027f6a608c21aa097377028deb4))
+* Initial FormKit configuration ([aadecd3](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/aadecd3061b33ecb90dd33071365b5e6c45e9957))
+* Initial login form & login / logout pages ([32864ff](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/32864ff05ccde8f8260e0844dc51f4cebde827cd))
+* Initial Tailwind CSS configuration ([c5618fd](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/c5618fd02e54a452624c846cb684bfdc3ebe28e3))
+* public/favicon.ico ([0e909b5](https://github.com/lewebsimple/nuxt3-prisma-graphql/commit/0e909b5b299ab8c040650d6cf7b2ae8a0509e88e))
+
 ### [0.1.6](https://github.com/lewebsimple/nuxt3-prisma-graphql/compare/0.1.5...0.1.6) (2022-06-19)
 
 
