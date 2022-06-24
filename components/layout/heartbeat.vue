@@ -7,6 +7,6 @@ useHearbeatSubscription({}, () => {
 
 <template>
   <div :class="heartbeat && 'animate-heartbeat'" @animationend="heartbeat = false">
-    {{ "<3" }}
+    <HeroHeartIcon class="w-4 h-4" />
   </div>
 </template>

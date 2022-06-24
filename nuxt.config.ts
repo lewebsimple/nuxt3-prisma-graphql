@@ -3,7 +3,10 @@ import { defineNuxtConfig } from "nuxt";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   build: {
-    transpile: ["@urql/vue"],
+    transpile: ["@heroicons/vue", "@urql/vue"],
+  },
+  components: {
+    dirs: ["~/components", { path: "node_modules/@heroicons/vue/outline/esm", prefix: "hero" }],
   },
   graphqlCodegen: { devOnly: true },
   modules: ["@formkit/nuxt", "@nuxtjs/tailwindcss", "nuxt-graphql-codegen", "~/modules/ws.ts"],

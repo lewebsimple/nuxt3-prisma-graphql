@@ -5,7 +5,12 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        heartbeat: "pulse 0.2s",
+        heartbeat: "heartbeat 0.2s",
+      },
+      keyframes: {
+        heartbeat: {
+          "75%, 100%": { transform: "scale(0.75)", opacity: "0.5" },
+        },
       },
       colors: {
         primary: { DEFAULT: colors.sky["700"], ...colors.sky },
