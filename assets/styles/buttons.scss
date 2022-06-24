@@ -1,0 +1,25 @@
+@layer components {
+
+  .btn-default {
+    @apply inline-flex justify-center items-center gap-1.5;
+    @apply py-2 px-4;
+    @apply border-2;
+    @apply rounded-md shadow-sm text-sm;
+    @apply font-medium;
+    @apply cursor-pointer;
+    @apply all-input;
+    @apply transition;
+    &.disabled, &:disabled {
+      @apply opacity-75 cursor-not-allowed;
+    }
+  }
+
+  .btn-primary {
+    @apply btn-default;
+    @apply bg-primary border-primary text-light;
+    &:active, &:hover {
+      @apply bg-primary-800;
+    }
+  }
+
+}
